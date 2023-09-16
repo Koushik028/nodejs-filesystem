@@ -13,7 +13,7 @@ if(!fs.existsSync(outputFolder)) {
 
 const PORT = 4000;
 
-app.get('/createFile', (req,res) => {
+app.post('/createFile', (req,res) => {
     const currentTime = new Date();
     const year = currentTime.getFullYear().toString();
     const month = (currentTime.getMonth () + 1).toString();
